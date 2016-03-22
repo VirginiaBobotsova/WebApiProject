@@ -7,8 +7,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="if" value="if ($condition$) {&#10;    $END$&#10;}" toReformat="false" toShortenFQNames="true">
-    <variable name="condition" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="if" value="if ($SELECTION$) {&#10;    $END$&#10;}" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
@@ -24,9 +23,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="iife" value="(function () {&#10;&#9;function $NAME$($PARAMS$) {&#10;&#9;&#9;$END$&#10;&#9;}&#10;&#10;}());" toReformat="false" toShortenFQNames="true">
-    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="iife" value="(function () {&#10;&#9;function $SELECTION$($SELECTION$) {&#10;&#9;&#9;$END$&#10;&#9;}&#10;&#10;}());" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
@@ -34,10 +31,7 @@
       <option name="JS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="met" value="$FUNC$.prototype.$MET$ = function ($PARAMS$) {&#10;&#9;&#9;$END$&#10;&#9;};" toReformat="false" toShortenFQNames="true">
-    <variable name="FUNC" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="MET" expression="" defaultValue="" alwaysStopAt="true" />
-    <variable name="PARAMS" expression="" defaultValue="" alwaysStopAt="true" />
+  <template name="met" value="$SELECTION$.prototype.$SELECTION$ = function ($SELECTION$) {&#10;    $END$&#10;};" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
       <option name="JS_EXPRESSION" value="true" />
